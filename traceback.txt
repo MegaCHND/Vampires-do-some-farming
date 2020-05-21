@@ -1,28 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Chapter_Two.rpy", line 148, in script
-    if jd_dead == True:
-  File "game/Chapter_Two.rpy", line 148, in <module>
-    if jd_dead == True:
-NameError: name 'jd_dead' is not defined
+  File "game/Chapter_Four.rpy", line 287, in script
+ScriptError: could not find label 'Start_chp5'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Chapter_Two.rpy", line 148, in script
-    if jd_dead == True:
-  File "D:\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Chapter_Two.rpy", line 148, in <module>
-    if jd_dead == True:
-NameError: name 'jd_dead' is not defined
+  File "game/Chapter_Four.rpy", line 287, in script
+  File "/Users/jaredclark/Desktop/renpy-7.3.5-sdk/renpy/ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/jaredclark/Desktop/renpy-7.3.5-sdk/renpy/script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'Start_chp5'.
 
-Windows-8-6.2.9200
+Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 Dracula 1.0
-Sun May 17 02:20:23 2020
+Wed May 20 16:18:33 2020

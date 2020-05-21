@@ -9,6 +9,11 @@ define jdw = Character("[JDWname]", who_font="fonts/ITCBLKAD.ttf", what_font="fo
 define janed = Character("[janedName]", who_font="fonts/PORKYS.ttf", what_font="fonts/PORKYS.ttf")
 define jc = Character("[JCname]", who_font="fonts/comic.ttf", what_font="fonts/comic.ttf")
 
+define unknow =  Character("[unknowName]", color=v.color, who_font="fonts/Precious.ttf", what_font="fonts/Precious.ttf")
+define Anna = Character("[AnnaName]", who_font="fonts/ITCBLKAD.ttf", what_font="fonts/ITCBLKAD.ttf") #new npc in chapter3
+define Franklin = Character("Franklin")
+define newCharacter = Character("???")
+
 # The script of the game goes in this file.
 
 label start:
@@ -17,9 +22,17 @@ label start:
     $ JDWname = "Jannet Doe"
     $ janedName = "???"
     $ JCname = "???"
+    $ AnnaName = "???"
+    $ unknowName = "???"
+    $ FN = "???"
     $ jd_dead = False
     $ janeD_dead = False
     $ jc_dead = False
+    $ ana_dead = False
+    $ CurrentChap = 1
+    $ total_trust = 10
+    $ trust_for_anna = 5
+    $ crops_tended_chp4 = 0
 
     scene Ranch_Sunset
 
@@ -556,7 +569,7 @@ label Creek_Shenanigans:
 label Frenzy:
     scene Black_Wall
 
-
+    $ CurrentChap = 2
 
     if Jane == 0:
         menu:
@@ -580,6 +593,7 @@ label Frenzy:
         "Kill Johnny":
             jump Cash_Dies
 
+
 label John_Dies:
 
     jd "bleh"
@@ -587,7 +601,8 @@ label John_Dies:
     $ jd_dead = True
     $ janeD_dead = False
     $ jc_dead = False
-    
+    $ chap_two_days = 0
+
     jump Chapter1_End_John_Dead
 
 label Jane_Dies:
@@ -596,6 +611,7 @@ label Jane_Dies:
     $ jd_dead = False
     $ janeD_dead = True
     $ jc_dead = False
+    $ chap_two_days = 0
 
     jump Chapter1_End_Jane_Dead
 
@@ -605,6 +621,7 @@ label Cash_Dies:
     $ jd_dead = False
     $ janeD_dead = False
     $ jc_dead = True
+    $ chap_two_days = 0
 
     jump Chapter1_End_Cash_Dead
     return

@@ -30,3 +30,17 @@ image JaneD = "images/Jane_Dough/JD.png"
 #Johnny Cash
 image JC = "images/Johnny_Cash/JC.png"
 image JC_Fishing = "images/Johnny_Cash/JC_Fishing.png"
+
+#Anna
+image Anna = "images/Anna/anna.png"
+
+#Franklin-Banker
+image Franklin = "images/Franklin_Banker/Banker.png"
+
+#Backgrounds for chapter 3
+image Drak_pic = "images/Chapter3_Backgrounds/Drak_pic.jpg"
+image Psychic_store = "images/Chapter3_Backgrounds/Psychic_store.jpg"
+image Crystal_ball = "images/Chapter3_Backgrounds/Crystal_ball.jpg"
+
+#Backgrounds for chapter 4
+image Bank_Lobby = "images/Chapter4_Backgrounds/bank_lobby.png"

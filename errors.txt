@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter_Two.rpy", line 221: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
-    janed "Oh hi there! You're John's new worker aren't you? What can I help you with?"
-    ^
+File "game/Chapter_Four.rpy", line 147: expected 'label_name' not found.
+    jump
+        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun May 17 02:04:17 2020
+Wed May 20 14:43:11 2020
