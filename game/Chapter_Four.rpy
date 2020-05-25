@@ -2,6 +2,7 @@
 label Start_chp4:
     $ jc_info = 0
     $ CurrentChap = 4
+    $ bonfire_invite = False
     scene Farmhouse_Day
     "You wake up feeling tired from the prior days work.
     \nYou will need to feed again soon."
@@ -167,7 +168,7 @@ label CHP4_Creek:
     show VampySprite at left
     mc "I did enjoy Johnny's company the present day"
     mc "I learn'd alot from that gent the present day. I bethink i am getting clos'r to the sooth."
-    jump CHP4_monrning
+    jump CHP4_morning
 
 label CHP4_Psychic:
     scene Psychic_store

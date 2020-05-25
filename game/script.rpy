@@ -13,6 +13,7 @@ define unknow =  Character("[unknowName]", color=v.color, who_font="fonts/Precio
 define Anna = Character("[AnnaName]", who_font="fonts/ITCBLKAD.ttf", what_font="fonts/ITCBLKAD.ttf") #new npc in chapter3
 define Franklin = Character("Franklin")
 define newCharacter = Character("???")
+define Steve = Character("Steve")
 
 # The script of the game goes in this file.
 

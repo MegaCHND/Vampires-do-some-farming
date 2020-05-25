@@ -44,3 +44,10 @@ image Crystal_ball = "images/Chapter3_Backgrounds/Crystal_ball.jpg"
 
 #Backgrounds for chapter 4
 image Bank_Lobby = "images/Chapter4_Backgrounds/bank_lobby.png"
+
+#Steve - Cop
+image Steve = "images/Steve_Cop/Steve.png"
+
+#Backgrounds for Chapter 5
+image Jail = "images/Chapter5_Backgrounds/jail.jpg"
+image bonfire = "images/Chapter5_Backgrounds/bonfire.jpg"

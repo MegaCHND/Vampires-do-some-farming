@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/Chapter_Four.rpy", line 147: expected 'label_name' not found.
-    jump
+File "game/Chapter_Five.rpy", line 59: expected ':' not found.
+    menu
+        ^
+
+File "game/Chapter_Five.rpy", line 68: expected ':' not found.
+    menu
+        ^
+
+File "game/Chapter_Five.rpy", line 77: expected ':' not found.
+    menu
+        ^
+
+File "game/Chapter_Five.rpy", line 221: expected ':' not found.
+    menu
+        ^
+
+File "game/Chapter_Five.rpy", line 230: expected ':' not found.
+    menu
+        ^
+
+File "game/Chapter_Five.rpy", line 239: expected ':' not found.
+    menu
         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May 20 14:43:11 2020
+Sun May 24 22:09:45 2020

@@ -224,7 +224,7 @@ label time_with_ana:
                 Thee either destroy those folk 'r dead with chaos and darkness."
         scene Psychic_store
     show VampySprite at left
-    mc "Hmm. Well enow, i did get something, farewell"
+    mc "Hmm. Well now, i did get something, farewell"
     show Anna at right
     Anna "Thanks for visit here, and I see you next time!"
     if CurrentChap == 3:
