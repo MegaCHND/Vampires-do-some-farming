@@ -73,16 +73,17 @@ label start:
     menu:
         "Tell the truth":
             jump Tell_the_truth
-        "Tell a lie":
+        "Keep Silent":
             jump Tell_a_lie
         "Make something up":
             $ y = renpy.input("better be persuasive")
             jump Tell_a_lie
 
 label Tell_the_truth:
+    mc "I can't rememb'r"
     jd "hmph, if you're gonna lie, at least make it believable. I’ll give ya one more chance to get your story straight."
     menu:
-        "Tell a lie":
+        "Keep Silent":
             jump Tell_a_lie
         "Make something up":
             $ y = renpy.input("better be persuasive")
@@ -128,7 +129,7 @@ label Tell_a_lie:
 
     jd "I’m coming!  I’m coming!"
 
-    "*Cocks gun* * opens door*"
+    "Mr. Doe cocks his rifle and slams open the door"
 
     jd "God dammit"
 
@@ -156,7 +157,7 @@ label Back_To_Story1:
 
     scene Farmhouse_Day
 
-    "*Bam Bam*"
+    "The rooster crows at the crack of dawn but it's cry is drowned out by Mr.Doe's unrelent banging"
 
     show JD
 
@@ -203,6 +204,7 @@ label Back_To_Story1:
 label Back_To_Story2:
     jd "ah that...Farm crisis. A few years ago, land was really cheap and Russia really wanted wheat."
     jd "But now, there’s too much wheat, and  no one wants to buy. People can’t pay for their farms anymore so they had to give up their farms."
+    jd "Frank's practically eaten em all up and spit em out to rot."
     jd "Sad thing really."
 
     mc "I offer mine own condolences"
@@ -256,7 +258,7 @@ label Tag_Along:
 
     hide JaneD
 
-    "Time to leave"
+    "A clock in the clothing store chimes as [MCname] leaves"
 
     jump At_noon
 
@@ -275,7 +277,7 @@ label Wander:
 
     jc "*WHEEZE*"
 
-    "*Walks to source of sounds*"
+    "After following the sounds, [MCname] arives at it's source"
 
     mc "Sir, art thee tis fine?"
 
@@ -292,7 +294,7 @@ label Wander:
 
     hide JC
 
-    "Better leave fast"
+    "With a beautiful sight fouled by the company, [MCname] decides it's better to head back"
 
     jump At_noon
 
@@ -307,7 +309,7 @@ label At_noon:
 
     scene Black_Wall
 
-    "You return to the Doe farm and spend the rest of the day helping John Doe"
+    "[MCname] returns to the Doe farm and spend the rest of the day helping Mr. Doe"
 
     scene Farmhouse_Bed
     show JD at right
@@ -346,7 +348,7 @@ label Next_Morning:
 
     scene Farmhouse_Day
 
-    "*Bam Bam*"
+    "The rooster crows at the crack of dawn and its cry is actually heard for once followed by a gentle knock on the door"
 
     show JDW at right
 
@@ -371,9 +373,9 @@ label Help_Farm:
     show VampySprite at right
 
     if Doe == 2:
-        "*Digging sfx*"
+        "Digging holes is straining for someone like [MCname]"
 
-        "*More Digging sfx*"
+        "However, once dug deep enough, the shade is quite pleasent"
 
         jd "Phew, hey thanks for helping out."
 
@@ -384,6 +386,9 @@ label Help_Farm:
         mc "Art thee sure? Well thanketh thee"
 
     if Doe == 3:
+        
+        "On the porch of the Doe farm, Mrs. Doe enjoys her Honey's singing...and [MCname]'s attempt."
+        
         jd "Never gonna give you up"
 
         mc "Nev'r gonna alloweth thee down"
@@ -398,7 +403,9 @@ label Help_Farm:
 
         jdw "[MCname], come in too."
 
-        mc "I'm going to finish up Mrs.  Doe.  W'rry not about me"
+        mc "I'm going to finish up Mrs. Doe.  W'rry not about me"
+
+        jdw "Are you sure? You never seem to want to eat with us"
 
     jump Next_Morning
 
@@ -441,9 +448,9 @@ label Strip_Mall_Fun:
     if Jane == 2:
         show VampySprite at left
 
-        "Ruffle Ruffle"
+        "With such a huge assortment of clothes and knicknacks, it's easy to forget what one originally came for."
 
-        mc "Nay. What didst Mrs Doe asketh f'r again?"
+        mc "Nay. What didst Mrs. Doe asketh f'r again?"
 
         show JaneD at right
 
@@ -458,7 +465,7 @@ label Strip_Mall_Fun:
     if Jane == 3:
         show VampySprite at left
 
-        "Ruffle Ruffle"
+        "For instance, the cover of this black book is sinister but oddly charming"
 
         mc "Ah this one looks valorous"
 
@@ -474,11 +481,11 @@ label Strip_Mall_Fun:
 
         janed "I'll pay for it..."
 
-        mc "Fine, taketh me out to lunch"
+        mc "I'll consid'r thee f'rgiven if't thee giveth me these supplies"
 
-        janed "Yay!"
+        janed "Really? Yay!"
 
-        "You and Jane are now friends!"
+        "Through some twist of fate, [MCname] and Jane have become acquaintances!"
 
     jump Next_Morning
 
@@ -496,7 +503,7 @@ label Creek_Shenanigans:
 
         jc "*WHEEZE*"
 
-        "*Walks to source of sounds*"
+        "After following the sounds, [MCname] arives at it's source"
 
         mc "Sir, art thee tis fine?"
 
@@ -514,11 +521,11 @@ label Creek_Shenanigans:
     if Cash == 2:
         show VampySprite at left
 
-        "*fishing sounds*"
+        "Fishing alone in the woods has it's own charm to it don't you think?"
 
         mc "Haa...This is nice."
 
-        "Rustle Rustle"
+        "However that charm is broken as the bushes rustle around"
 
         mc "hm?"
 
@@ -532,7 +539,7 @@ label Creek_Shenanigans:
 
         mc "Mine own nameth is [MCname]"
 
-        mc "I pref'r thee useth t"
+        mc "I pref'r thee useth"
 
         jc "Yeeeah, I'm not gonna remember that buddy"
 
@@ -541,11 +548,11 @@ label Creek_Shenanigans:
     if Cash == 3:
         show VampySprite at left
 
-        "*fishing sounds*"
+        "Though, being lost in your thoughts is only useful when you have something to think about"
 
         mc "Tis boring..."
 
-        "Rustle Rustle"
+        "Oh look! Something to think about."
 
         mc "hm?"
 
@@ -559,11 +566,9 @@ label Creek_Shenanigans:
 
         jc "Anyways, I have this map of all the best fishing spots. Here have a look."
 
-        "DEV NOTE! This MAP (Not implemented) is where Vampy can fish up gifts for later ^_^"
-
         mc "Well...Thanketh thee"
 
-        jc "Eyy no problem man."
+        jc "Eyy no problem man. And I reeeally don't wanna by rube but you're really pale.\n I think you should see a doctor, man."
 
     jump Next_Morning
 
@@ -571,6 +576,10 @@ label Frenzy:
     scene Black_Wall
 
     $ CurrentChap = 2
+
+    "In the Doe farm, everyone sleeps soundly...well almost everyone."
+    "[MCname] tosses and turns on the couch, trapped in a nightmare."
+    "A voice pluages him, binding him to it's command..."
 
     if Jane == 0:
         menu:
@@ -597,8 +606,9 @@ label Frenzy:
 
 label John_Dies:
 
-    jd "bleh"
-    jdw "bleh"
+    "The rooster crows, it's cry heard loud and clear over the Doe farm."
+    "The only other sound that can be heard comes from a shovel placing dirt over the dried corpses of Mr. and Mrs Doe."
+    
     $ jd_dead = True
     $ janeD_dead = False
     $ jc_dead = False
@@ -607,8 +617,7 @@ label John_Dies:
     jump Chapter1_End_John_Dead
 
 label Jane_Dies:
-
-    janed "bleh"
+    
     $ jd_dead = False
     $ janeD_dead = True
     $ jc_dead = False
@@ -617,8 +626,7 @@ label Jane_Dies:
     jump Chapter1_End_Jane_Dead
 
 label Cash_Dies:
-
-    jc "bleh"
+    
     $ jd_dead = False
     $ janeD_dead = False
     $ jc_dead = True

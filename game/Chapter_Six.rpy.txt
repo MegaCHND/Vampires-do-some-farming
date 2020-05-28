@@ -1,0 +1,2 @@
+label Start_chp6:
+    "There is no chapter 6 yet"
